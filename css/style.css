@@ -718,9 +718,11 @@ em{
 
 
 .content-bx {
-    border-bottom: 1px solid #e5e7eb;
+    border: 1px solid #e5e7eb;
     width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
+    border-radius: 10px;
+    padding: 0 1rem;
 }
 
 .header-title {
@@ -851,7 +853,7 @@ footer{
 }
 
 .quick-link{
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 .quick-link h3{
@@ -864,7 +866,7 @@ footer{
 }
 
 .ft-logo .logo{
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .category-link ul{
@@ -875,8 +877,8 @@ footer{
     
 }
 
-.category-link ul li{
-    padding: 5px;
+.category-link ul li a{
+    padding: 5px 8px;
     border: 1px solid #ccc;
 }
 
