@@ -23,3 +23,31 @@ faqItems.forEach((item) => {
     });
 });
 
+
+// Add to card Button
+
+
+
+const addCart = document.querySelectorAll(".btn-add");
+
+function addToCart() {
+    addCart.forEach((button) => {
+        button.addEventListener("click", () => {
+            // Show check icon and Added text
+            button.innerHTML = `
+                <i class="ri-check-line"></i>
+                <span>Added</span>
+            `;
+
+            // Switch back after 1 second
+            setTimeout(() => {
+                button.innerHTML = `
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <span>Add to cart</span>
+                `;
+            }, 1500);
+        });
+    });
+}
+
+addToCart();

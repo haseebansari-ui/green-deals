@@ -471,7 +471,7 @@ em{
 }
 
 .body{
-    padding: 15px;
+    padding: 15px 15px 0 15px;
 }
 
 .body small{
@@ -485,7 +485,7 @@ em{
 }
 
 .body .price{
-    margin: 0.5rem 0 0.8rem;
+    margin: 0.5rem 0 0;
 }
 
 .body .price b{
@@ -518,8 +518,17 @@ em{
     font-size: 1rem;
 }
 
+.trend-card .btn-all{
+    width: 229px;
+    gap: 0.5rem;
+    height: 45px;
+    margin: 0 auto;
+}
 
-
+.trend-card {
+    height: 450px;
+    padding-bottom: 1rem;
+}
 
 /* ---- How it Work ---- */
 
@@ -893,5 +902,80 @@ footer{
     padding: 1.5rem 0;
     border-top: 1px solid #ccc;
     margin-top: 2rem;
+}
+
+
+/* ---- Deal page Section ---- */
+
+.d-info .price span{
+    height: 30px;
+    width: 30px;
+    background: var(--g);
+    color: var(--color-white);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tick li{
+    margin-bottom: 0.8rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.tick li::before{
+    content: "\eb7a";
+    color: var(--g);
+    font-weight: 700;
+    margin-right: 6px;
+    font-family: remixicon;
+    font-size: 1.1rem;
+}
+
+.d-img{
+    height: 430px;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.d-img img{
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.qty-row{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.add-cart-btn{
+    width: 350px;
+    height: 55px;
+    margin: 0.5em;
+    background: transparent;
+    border: 1px solid var(--gd);
+    color: var(--gd);
+    border-radius: 0.625em;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.add-cart-btn:hover{
+    background: var(--gd);
+    color: var(--color-white);
+}
+
+
+.d-info h6{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
 }
 
