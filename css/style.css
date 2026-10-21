@@ -1000,3 +1000,146 @@ footer{
     font-size: 2rem;
     margin-bottom: 0.8rem;
 }
+
+
+/* ---- Cart Page Section ---- */
+
+.cart-items{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.cart-img {
+    height: 80px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cart-img img{
+    height: 80px;
+    object-fit: cover;
+}
+
+.c-info h6{
+    margin: 0.8rem 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.c-info .price b{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--g);
+}
+
+.c-info .price{
+    margin:0;
+}
+
+.qty{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    width: 110px;
+    border: 1px Solid #ccc;
+    padding: 5px;
+    border-radius: 26px;
+}
+
+.qty-num{
+    height: 40px;
+    width: 40px;
+    background: var(--gl);
+    border-radius: 100%;
+}
+
+.qty-num i{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--gd);
+}
+
+.qty span{
+    font-size: 1rem;
+}
+
+.coupon-code {
+    font-size: 1.1rem;
+    color: var(--g);
+    font-weight: 600;
+}
+
+.delete-item {
+    background: none;
+}
+
+.delete-item i{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+
+/* ---- Order Summary Section ---- */
+
+.order-summary-main{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow:  0 10px 30px rgba(13, 107, 51, 0.12);
+}
+
+.order-summary-main h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.order-summary-bx{
+    padding-bottom: 0.7rem;
+    border-bottom: 1px dashed var(--g);
+    margin-bottom: 1rem;
+}
+
+.ds-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-sum-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.order-sum-amt{
+    font-size: 1rem;
+    font-weight: 600;
+    font-weight: bold;
+}
+
+.save-money .order-sum-amt{
+    color: var(--g);
+}
+
+.save-money .save-title{
+    color: var(--g);
+}
+
+.total-amt-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--gd);
+}
+
+.total-amt{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--gd);
+}
