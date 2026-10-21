@@ -230,7 +230,8 @@ h2{
 }
 
 nav{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc
+    ;
 }
 
 nav ul{
@@ -249,7 +250,7 @@ nav ul li a{
     transition: var(--transition);
 }
 nav ul li a:hover{
-    border-bottom: 1px solid var(--g);
+    border-bottom: 4px solid var(--gd);
     background: rgb(248, 255, 252);
 }
 
@@ -983,3 +984,19 @@ footer{
     margin-top: 1rem;
 }
 
+/* ---- Cart Inner Banner Section ---- */
+
+.inn-banner-sec{
+    background: linear-gradient(120deg, #0d6b33, #2fbf6b);
+    padding: 3rem 0;
+}
+
+.inn-ban-cnct{
+    color: var(--color-white);
+}
+
+.inn-ban-title{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
