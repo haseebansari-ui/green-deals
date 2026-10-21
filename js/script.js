@@ -4,7 +4,6 @@
 
 // faq Accordian
 
-
 const faqItems = document.querySelectorAll(".content-bx");
 
 faqItems.forEach((item) => {
@@ -25,8 +24,6 @@ faqItems.forEach((item) => {
 
 
 // Add to card Button
-
-
 
 const addCart = document.querySelectorAll(".btn-add");
 
