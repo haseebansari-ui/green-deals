@@ -1439,10 +1439,16 @@ footer{
     background: var(--g);
 }
 
+.checkout-order{
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+}
 
 .checkout-order .cart-items{
     padding: 0;
+    justify-content: inherit;
     border: none;
+    gap: 1rem;
 }
 
 .checkout-order .cart-items:first-child{
@@ -1469,7 +1475,7 @@ footer{
 .checkout-order .c-info{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.1rem;
 }
 
 .checkout-order .c-info .order-qty{
