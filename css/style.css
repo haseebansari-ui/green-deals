@@ -1209,3 +1209,233 @@ footer{
 .continue-shopping:hover{
     color: var(--g);
 }
+
+
+/* ---- Checkout page Section ---- */
+
+.checkout-main{
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.checkout-contact-details {
+    margin-bottom: 2rem;
+}
+
+.checkout-contact-details h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.checkout-payment-mode h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.check-input-field{
+    width: 100%;
+    border: 1px solid #ccc;
+    line-height: 50px;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.check-input-field::placeholder{
+    font-family: var(--font-poppins);
+    color: var(--mut);
+}
+
+.check-input-field-bx select{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-family: var(--font-poppins);
+    color: var(--mut);
+    appearance: base-select;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.check-input-field-bx select:hover{
+    background: transparent;
+}
+
+.check-input-field-bx select:focus{
+    background: transparent;
+}
+
+.check-input-field-bx select option{
+    font-family: var(--font-poppins);
+}
+
+
+/* ---- Payment Method ---- */
+
+
+.payment-mode-bx {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.payment-option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    min-height: 76px;
+    padding: 14px 18px;
+    margin-bottom: 0;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+    transition: border-color 0.25s ease,
+                background-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+/* Hide native radio while keeping it accessible */
+.payment-option input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+/* Custom radio */
+.custom-radio {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border: 2px solid #bdbdbd;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: all 0.25s ease;
+}
+
+.custom-radio::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--gd);
+    transform: scale(0);
+    transition: transform 0.2s ease;
+}
+
+/* Active payment option */
+.payment-option:has(input:checked) {
+    border-color: var(--gd);
+    background: rgba(128, 0, 128, 0.04);
+    box-shadow: 0 0 0 1px var(--gd);
+}
+
+.payment-option input:checked + .custom-radio {
+    border-color: var(--gd);
+}
+
+.payment-option input:checked + .custom-radio::after {
+    transform: scale(1);
+}
+
+/* Payment text */
+.payment-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.payment-text strong {
+    font-size: 15px;
+    font-weight: 600;
+    color: #252525;
+}
+
+.payment-text small {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Payment icon */
+.payment-icon {
+    font-size: 25px;
+    color: var(--gd);
+}
+
+/* Card details visibility */
+.card-details-main {
+    display: none;
+    padding: 20px 0 4px;
+    animation: paymentFadeIn 0.3s ease;
+}
+
+.payment-mode-bx:has(#card-method:checked) .card-details-main {
+    display: block;
+}
+
+/* Card inputs */
+.card-deatil-input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 12px;
+    margin-bottom: 16px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.card-deatil-input:focus {
+    border-color: var(--gd);
+    box-shadow: 0 0 0 3px rgba(128, 0, 128, 0.08);
+}
+
+/* Keyboard accessibility */
+.payment-option:focus-within {
+    outline: 2px solid var(--gd);
+    outline-offset: 3px;
+}
+
+@keyframes paymentFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.check-term-condition{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.check-term-condition label{
+    color: #6e6e6e;
+}
+
+.checkout-main form .place-order{
+    width: 100%;
+    height: 45px;
+    background: var(--g);
+}
+

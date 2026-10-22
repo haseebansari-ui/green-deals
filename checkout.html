@@ -69,14 +69,174 @@
             
         </section>
 
-        <!-- Cart Detail Section -->
+        <!-- Check Detail Form Section -->
 
-        <section class="cart-detail-sec sec-pad">
+        <section class="sec-pad">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="checkout-main">
-                            <h1>Hello World</h1>
+                            <form>
+                                <div class="checkout-contact-details">
+
+                                    <h3>Contact Details</h3>
+
+                                    <div class="check-contact-fields">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="check-input-field-bx">
+                                                    <input type="text" class="check-input-field" placeholder="Full Name" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="check-input-field-bx">
+                                                    <input type="email" class="check-input-field" placeholder="Email address" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="check-input-field-bx">
+                                                    <input type="tel" class="check-input-field" placeholder="Phone (+971)" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="check-input-field-bx">
+                                                    <select>
+                                                        <option value="Select">Select</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                        <option value="Abu Dhabi">Abu Dhabi</option>
+                                                        <option value="Sharjah">Sharjah</option>
+                                                        <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                                                        <option value="Ajman">Ajman</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+                                
+                                <div class="checkout-payment-mode">
+                                    <h3>Payment method</h3>
+
+                                    <!-- Credit / Debit Card -->
+                                    <div class="payment-mode-bx">
+                                        <label class="payment-option" for="card-method">
+                                            <input
+                                                type="radio"
+                                                name="payment-method"
+                                                id="card-method"
+                                                value="card"
+                                                checked
+                                            />
+
+                                            <span class="custom-radio"></span>
+
+                                            <span class="payment-text">
+                                                <strong>Credit / Debit Card</strong>
+                                                <small>Pay securely using your card</small>
+                                            </span>
+
+                                            <i class="ri-bank-card-line payment-icon"></i>
+                                        </label>
+
+                                        <!-- Card details: visible only when Card is selected -->
+                                        <div class="card-details-main">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="card-details-bx">
+                                                        <input
+                                                            type="text"
+                                                            class="card-deatil-input"
+                                                            placeholder="Card number (16 digits)"
+                                                            maxlength="16"
+                                                            inputmode="numeric"
+                                                            autocomplete="cc-number"
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <div class="card-details-bx">
+                                                        <input
+                                                            type="text"
+                                                            class="card-deatil-input"
+                                                            placeholder="MM/YY"
+                                                            maxlength="5"
+                                                            inputmode="numeric"
+                                                            autocomplete="cc-exp"
+                                                        />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6">
+                                                    <div class="card-details-bx">
+                                                        <input
+                                                            type="password"
+                                                            class="card-deatil-input"
+                                                            placeholder="CVV"
+                                                            maxlength="4"
+                                                            inputmode="numeric"
+                                                            autocomplete="cc-csc"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Apple Pay -->
+                                    <div class="payment-mode-bx">
+                                        <label class="payment-option" for="apple-pay">
+                                            <input
+                                                type="radio"
+                                                name="payment-method"
+                                                id="apple-pay"
+                                                value="apple-pay"
+                                            />
+
+                                            <span class="custom-radio"></span>
+
+                                            <span class="payment-text">
+                                                <strong>Apple Pay</strong>
+                                            </span>
+
+                                            <i class="ri-apple-fill payment-icon"></i>
+                                        </label>
+                                    </div>
+
+                                    <!-- Pay at venue -->
+                                    <div class="payment-mode-bx">
+                                        <label class="payment-option" for="pay-venue">
+                                            <input
+                                                type="radio"
+                                                name="payment-method"
+                                                id="pay-venue"
+                                                value="pay-venue"
+                                            />
+
+                                            <span class="custom-radio"></span>
+
+                                            <span class="payment-text">
+                                                <strong>Pay at venue</strong>
+                                            </span>
+
+                                            <i class="ri-store-2-line payment-icon"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="check-term-condition">
+                                    <input type="checkbox" id="check"> <label for="check">I agree to the terms and refund policy</label>
+                                </div>
+
+                                <button class="btn-all place-order">Place Order</button>
+                            </form>
+                            
                         </div>
                     </div>
                     

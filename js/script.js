@@ -48,3 +48,34 @@ function addToCart() {
 }
 
 addToCart();
+
+
+// Checkout payment Mode
+
+
+const paymentMethods = document.querySelectorAll(
+    'input[name="payment-method"]'
+);
+
+const cardDetails = document.querySelector(".card-details-main");
+
+function updatePaymentMethod() {
+    const selectedMethod = document.querySelector(
+        'input[name="payment-method"]:checked'
+    );
+
+    if (!selectedMethod || !cardDetails) return;
+
+    if (selectedMethod.value === "card") {
+        cardDetails.style.display = "block";
+    } else {
+        cardDetails.style.display = "none";
+    }
+}
+
+paymentMethods.forEach((method) => {
+    method.addEventListener("change", updatePaymentMethod);
+});
+
+// Set the correct initial state on page load
+updatePaymentMethod();
