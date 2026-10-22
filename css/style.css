@@ -1004,14 +1004,29 @@ footer{
 
 /* ---- Cart Page Section ---- */
 
+.position-relative{
+    position: relative;
+}
+
+.order-summary-main{
+    position: sticky;
+    top: 10px;
+    right: 0;
+}
+
 .cart-items{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-
+    justify-content: space-between;
+    /* gap: 1.7rem; */
     border: 1px solid #ccc;
-    padding: 1rem;
+    padding: 10px 20px;
     border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cart-items:last-child{
+    margin-bottom: 0;
 }
 
 .cart-img {
@@ -1029,11 +1044,11 @@ footer{
 .c-info h6{
     margin: 0.8rem 0;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .c-info .price b{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--g);
 }
@@ -1142,4 +1157,55 @@ footer{
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--gd);
+}
+
+.form-bx{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.apply-btn{
+    width: 110px;
+    height: 40px;
+    background: var(--g);
+}
+
+.promo-code-input{
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.promo-code-input::placeholder{
+    font-family: var(--font-poppins);
+}
+
+.promo-code-input:focus{
+    outline: 1px solid #000;
+}
+
+.checkout-btn{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background: var(--g);
+}
+
+.continue-shopping{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: var(--gd);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.continue-shopping:hover{
+    color: var(--g);
 }
