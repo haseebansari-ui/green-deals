@@ -1443,8 +1443,10 @@ footer{
 .checkout-order .cart-items{
     padding: 0;
     border: none;
-    /* justify-content: inherit; */
-    /* gap: 0.7rem; */
+}
+
+.checkout-order .cart-items:first-child{
+    margin-top: 1.5rem;
 }
 
 .checkout-order .cart-items .c-info h6{
