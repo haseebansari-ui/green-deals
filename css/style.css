@@ -10,6 +10,7 @@
   --mut: #667a6e;
   --color-white: #fff;
   --font-poppins: "Poppins", sans-serif;
+  --green-soft:radial-gradient(ellipse at 0% 10%, rgba(26, 155, 75, .10), transparent 38%), radial-gradient(ellipse at 100% 85%, rgba(26, 155, 75, .08), transparent 35%), #f4fbf6;
 
   --transition: all 0.3s ease-in-out;
 }
@@ -1667,4 +1668,100 @@ footer{
     width: 100%;
     padding: 15px 15px 15px 15px;
     border-radius: 5px;
+}
+
+/* ---- About Us Section ---- */
+
+.about-pg-sec{
+    background: var(--green-soft);
+    padding: 3rem 0 5rem;
+    
+}
+
+.about-title{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.about-title span{
+    color: var(--g);
+}
+
+.heading-bx p{
+    width: 650px;
+    margin: 2rem auto;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.about-link-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.about-link-bx .btn-all{
+    width: 160px;
+}
+
+.about-link-bx .sucess-link.exploring{
+    background: var(--color-white);
+    border: 1px solid #ccc;
+    color: var(--dark);
+    height: 55px;
+}
+
+.about-link-bx .sucess-link.exploring:hover{
+    color: var(--gd);
+    border: 1px solid var(--gd);
+}
+
+.hero-image-wrap {
+    max-width: 1020px;
+    height: 360px;
+    margin: 58px auto 0;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 28px 65px rgba(24, 65, 37, .15);
+    background: #dcefe2;
+}
+
+.hero-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 52%;
+}
+
+.hero-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(10, 35, 18, .50), transparent 80%);
+}
+
+.hero-image-caption {
+    position: absolute;
+    left: 32px;
+    bottom: 28px;
+    max-width: 350px;
+    color: var(--color-white);
+}
+
+.hero-image-caption span {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.hero-image-caption h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 26px;
+    line-height: 1.3;
+    color: var(--color-white);
 }
