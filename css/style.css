@@ -1487,3 +1487,130 @@ footer{
     color: var(--dark);
     font-size: 1rem;
 }
+
+/* ---- Thank You Page Section ---- */
+
+.success-bx{
+    width: 600px;
+    margin: 0 auto;
+    box-shadow:  0 10px 30px rgba(13, 107, 51, 0.12);
+    padding: 40px 20px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.success-icon{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    background: var(--gd);
+    color: var(--color-white);
+    border-radius: 100%;
+}
+
+.success-icon i{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.success-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.success-bx p{
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.success-bx p span{
+    font-weight: bold;
+    color: var(--mut);
+}
+
+.receipt{
+    width: 500px;
+    padding: 20px;
+    background: var(--gl);
+    border-radius: 1rem;
+    margin: 0 auto 1.3rem;
+}
+
+.srow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px dashed var(--gd);
+    padding-bottom: 1rem;
+}
+
+.srow span{
+    font-size: 1rem;
+}
+
+.srow b{
+    font-size: 1rem;
+}
+
+.srow.total{
+    border-bottom: none;
+    padding-top: 10px;
+}
+
+.srow.total span{
+    font-size: 1.2rem;
+    color: var(--gd);
+    font-weight: bold;
+}
+
+.srow.total b{
+    font-size: 1.2rem;
+    color: var(--gd);
+}
+
+.receipt small{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.sucess-links-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.8rem;
+}
+
+.sucess-link{
+    padding: 0 20px;
+    line-height: 50px;
+    background: var(--g);
+    border-radius: 10px;
+    color: var(--color-white);
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.sucess-link:hover{
+    border: 1px solid var(--g);
+    background: var(--gd);
+    color: var(--color-white);
+}
+
+.sucess-link.exploring{
+    background: transparent;
+    color: var(--g);
+    border: 1px solid var(--g);
+    transition: var(--transition);
+}
+
+.sucess-link.exploring:hover{
+    background: var(--gd);
+    color: var(--color-white);
+    border: 1px solid var(--gd);
+}

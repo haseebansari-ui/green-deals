@@ -79,3 +79,6 @@ paymentMethods.forEach((method) => {
 
 // Set the correct initial state on page load
 updatePaymentMethod();
+
+
+
