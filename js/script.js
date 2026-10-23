@@ -82,3 +82,15 @@ updatePaymentMethod();
 
 
 
+// Thankyou Page
+
+document.addEventListener("DOMContentLoaded", () => {
+    const successPage = document.querySelector(".place-order");
+
+    if (successPage) {
+        successPage.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.location.href = "./thankyou.html";
+        });
+    };
+});
