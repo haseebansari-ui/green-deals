@@ -91,6 +91,13 @@ h2{
     text-transform: uppercase;
 }
 
+.heading-bx p{
+    width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
 .btn-all{
     width: 200px;
     height: 55px;
@@ -306,7 +313,8 @@ nav ul li a:hover{
 }
 
 .deal-bg-clr{
-    background: var(--gl);
+    background: var(--green-soft);
+    border: 1px solid #ccc;
 }
 
 .deal-left{
@@ -346,7 +354,7 @@ nav ul li a:hover{
 }
 
 .deal-right{
-    padding: 2rem 1.5rem 2rem 1.5rem;
+    padding: 2rem 1.5rem 0 1.5rem;
 }
 
 .deal-right .heading-bx{
@@ -539,7 +547,7 @@ em{
 /* ---- How it Work ---- */
 
 .process-sec{
-    background: var(--gl);
+    background: var(--green-soft);
 }
 
 .process-sec.sec-pad{
@@ -553,7 +561,8 @@ em{
 .hm-process-card{
     padding: 4rem 2rem 2rem;
     position: relative;
-    background: rgba(213, 217, 215, 0.412);
+    /* background: rgba(213, 217, 215, 0.412); */
+    background: var(--color-white);
     border-radius: 1rem;
     transition: var(--transition);
     border: 1px solid #ccc;
@@ -701,7 +710,7 @@ em{
 }
 
 .testimonial-sec{
-    background: var(--gl);
+    background: var(--green-soft);
 }
 
 .testimonial-sec .heading-bx{
@@ -715,7 +724,7 @@ em{
     border-radius: 1rem;
     transition: var(--transition);
     border: 1px solid #ccc;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.227);
+    box-shadow: 0 0 25px rgb(63 62 62 / 23%);
 }
 
 .test-rates-stars i{
@@ -1641,7 +1650,7 @@ footer{
 }
 
 .contact-info h3{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .contact-form-bx{
@@ -1688,7 +1697,7 @@ footer{
     color: var(--g);
 }
 
-.heading-bx p{
+.hm-category .heading-bx p{
     width: 650px;
     margin: 2rem auto;
     line-height: 1.7;
@@ -1764,4 +1773,206 @@ footer{
     font-size: 26px;
     line-height: 1.3;
     color: var(--color-white);
+}
+
+
+/* ---- Our Story Section ---- */
+
+.our-story-img-bx{
+    position: relative;
+    border-radius: 1rem;
+    height: 400px;
+    z-index: 1;
+}
+
+.our-story-img-bx img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.our-story-cnct-bx{
+    position: absolute;
+    bottom: 20px;
+    right: -40px;
+    height: auto;
+    width: 250px;
+    background: var(--color-white);
+    z-index: 5;
+}
+
+.our-story-cnct-bx{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 45px rgba(24, 37, 29, 0.07);
+}
+
+.our-story-cnct-icon i{
+    color: var(--gd);
+    font-size: 2rem;
+}
+
+.our-story-cnct-title{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.story-copy{
+    padding-left: 4rem;
+}
+
+.story-title{
+    font-size: 2.5rem;
+}
+
+.story-point{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.story-point:last-child{
+    margin-bottom: 1rem;
+}
+
+.story-point h3{
+    font-size: 1rem;
+    margin:  0 0 0.3rem 0;
+}
+
+.story-point-icon{
+    height: 40px;
+    width: 40px;
+    background: var(--gl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.story-point-icon i{
+    color: var(--g);
+    font-size: 1rem;
+}
+
+.story-para{
+    margin-bottom: 1.5rem;
+}
+
+
+/* ---- Mission And Vission Section ---- */
+
+.viss-miss-sec{
+    background: var(--green-soft);
+}
+
+.viss-miss-sec .heading-bx{
+    margin-bottom: 3rem;
+}
+
+.viss-miss-sec .heading-bx .badge-title{
+    background: transparent;
+}
+
+.viss-miss-card{
+    background: var(--color-white);
+    border-radius: 15px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    transform: translateY(0);
+    box-shadow: 0 0 20px transparent;
+    transition: var(--transition);
+}
+
+.viss-miss-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(134, 248, 182, 0.308);
+}
+
+.viss-miss-card h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.misson-icon{
+    height: 50px;
+    width: 50px;
+    background: var(--green-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.misson-icon i{
+    font-size: 1.5rem;
+    color: var(--gd);   
+}
+
+.viss-miss-card p{
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+/* ---- About Category Section ---- */
+
+.abt-category-sec .heading-bx{
+    margin-bottom: 3rem;
+}
+
+.abt-category-sec .heading-bx .badge-title{
+    background: transparent;
+}
+
+.abt-category-sec .heading-bx h2{
+    margin-bottom: 1rem;
+}
+
+.abt-category-card{
+    display: block;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px transparent;
+    border-radius: 10px;
+    transform: translateY(0);
+    transition: var(--transition);
+    height: 230px;
+}
+
+.abt-category-card:hover{
+    transform: translateY(-10px);
+    border: 1px solid var(--g);
+    box-shadow: 0 0 20px rgba(44, 44, 44, 0.164);
+}
+
+.abt-card-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 50px;
+    width: 50px;
+    background: var(--green-soft);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.abt-card-icon i{
+    font-size: 2rem;
+    color: var(--gd);
+}
+
+.abt-card-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.abt-category-card p{
+    line-height: 1.6;
 }
