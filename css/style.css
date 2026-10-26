@@ -558,6 +558,10 @@ em{
     margin-bottom: 5rem;
 }
 
+.process-sec .heading-bx .badge-title{
+    background: transparent;
+}
+
 .hm-process-card{
     padding: 4rem 2rem 2rem;
     position: relative;
@@ -588,7 +592,7 @@ em{
     align-items: center;
     justify-content: center;
     border: 1px solid #ccc;
-    color: rgba(0, 0, 0, 0.239);
+    color: rgba(7, 102, 31, 0.397);
 }
 
 .hm-process-card:hover .process-num{
@@ -1974,5 +1978,38 @@ footer{
 }
 
 .abt-category-card p{
+    line-height: 1.6;
+}
+
+/* ---- Values Section ---- */
+
+.value-sec.sec-pad{
+    padding: 8rem 0;
+}
+
+.value-sec .heading-bx .badge-title{
+    background: transparent;
+}
+
+.value-card{
+    text-align: center;
+}
+
+.value-card-icon{
+    margin-bottom: 0.8rem;
+}
+
+.value-card-icon i{
+    font-size: 2.2rem;
+    color: var(--g);
+}
+
+.value-card-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.value-card p{
     line-height: 1.6;
 }
