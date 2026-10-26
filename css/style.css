@@ -2186,15 +2186,16 @@ footer{
 /* ---- Sign up Section ---- */
 
 .form-main-bx{
-    padding: 70px 100px;
+    padding: 58px 100px;
 }
 
-.signup-heading-bx{
-    margin-bottom: 1rem;
-}
 
-.signup-heading-bx h3{
+.form-main-heading-bx h3{
     font-size: 2rem;
+}
+
+.form-main-heading-bx p{
+    margin-bottom: 2rem;
 }
 
 .form-input{
