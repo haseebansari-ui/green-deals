@@ -94,3 +94,29 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 });
+
+
+
+// password
+
+const password = document.querySelector('.password');
+const eyeBtn = document.querySelector('.eye-icon');
+const showPss = document.querySelector('.eye-icon .show-pss');
+const hidePss = document.querySelector('.eye-icon .hide-pss');
+
+if(password && eyeBtn && showPss && hidePss){
+
+    eyeBtn.addEventListener('click', ()=>{
+        if(password.type === "password"){
+            password.type = "text";
+            showPss.style.display = "none";
+            hidePss.style.display = "flex";
+        }else{
+            password.type = "password";
+            showPss.style.display = "flex";
+            hidePss.style.display = "none";
+        }
+    })
+}
+
+
