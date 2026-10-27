@@ -901,18 +901,18 @@ footer{
     font-size: 2.5rem;
 }
 
-.category-link ul{
+/* .category-link ul{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
     
-}
+} */
 
-.category-link ul li a{
+/* .category-link ul li a{
     padding: 5px 8px;
     border: 1px solid #ccc;
-}
+} */
 
 .copy-right{
     /* background: var(--gl); */
@@ -2295,14 +2295,4 @@ footer{
     display: none;
 }
 
-/* ---- Hero Section ---- */
 
-/* .hero-img-bx {
-    height: 400px;
-}
-
-.hero-img-bx img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-} */
